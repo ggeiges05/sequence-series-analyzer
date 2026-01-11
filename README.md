@@ -1,3 +1,10 @@
 # sequence-series-analyzer
 Project: Sequence &amp; Series Analyzer (Python)
 Sequence & Series Analyzer is a Python program that analyzes numerical datasets to determine whether they form arithmetic or geometric sequences and computes key sequence values using closed-form mathematics. Given a user-provided dataset (entered as space- or comma-separated values), the program validates the input and detects whether the data follows an arithmetic model (constant difference) or a geometric model (constant ratio). To ensure reliability with real-world decimal data, the analyzer uses tolerance-based floating-point comparisons rather than exact equality, preventing false negatives caused by numerical precision limitations. Once a valid model is identified, the program computes the nth term 𝑎𝑛 and the partial sum of the first 𝑛 terms 𝑆𝑛, where 𝑛 is provided by the user and correctly interpreted as a term index rather than a dataset index. Constant sequences are handled as a special case that satisfy both arithmetic and geometric definitions, and results are reported consistently for both interpretations. The project emphasizes clear mathematical reasoning, structured program design, and robust numerical handling, making it suitable for educational use and analytical experimentation. This version (v1) focuses on exact inference for arithmetic and geometric sequences derived from datasets; future planned extensions include polynomial sequence detection via finite differences and an equation-input mode that allows users to analyze sequences starting from explicit formulas.
+Example:
+Input: 0.1, 0.3, 0.5, 0.7
+n: 5
+Output:
+Arithmetic sequence detected (d ≈ 0.2)
+a_5 = 0.9
+S_5 = 2.5
